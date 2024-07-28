@@ -1,4 +1,6 @@
 table {
+	margin: 5px;
+	width: 100%;
     border: 2px solid black;
     border-collapse: collapse;
 }
@@ -17,6 +19,56 @@ button {
 	margin: 10px;
 }
 
-tbody {
+#data {
 	display: none;
+}
+
+@media only screen and (orientation: landscape) {
+	#landscape_table {
+		font-size: 3vh;
+	}
+	
+	#portrait_table {
+		display: none;
+	}
+}
+
+@media only screen and (orientation: portrait) {
+	html, body {
+		height: 100%;
+		margin: 0px;
+	}
+	
+	header {
+		height: 10%;
+		margin: 0px;
+	}
+	
+	#portrait_table {
+		height: 80%;
+		margin: 0px;
+	}
+	
+	#portrait_table tbody {
+		height: 25%;
+	}
+	
+	#portrait_table th {
+		font-size: 3vh;
+		width: 20%;
+	}
+	
+	#portrait_table td {
+		font-size: 5vh;
+		width: 80%;
+	}
+	
+	.buttons {
+		height: 10%;
+		margin: 0px;
+	}
+	
+	#landscape_table {
+		display: none;
+	}
 }

@@ -9,14 +9,69 @@
     </head>
     <body>
 	
-		<h1>
+		<header>
 		<!-- Title under this line -->
 		One Piece vocabulary drill
-		</h1>
+		</header>
+		
+		<table id = 'landscape_table' >
+			<thead>
+				<tr>
+					<th>漢字</th>
+					<th>かな</th>
+					<th>English</th>
+					<th>Spanish</th>
+				</tr>
+			</thead>
+			<tbody id = 'landscape_question_body' >
+				<tr>
+					<td id = 'landscape_kanji_field' ></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</tbody>
+			<tbody id = 'landscape_answer_body' >
+			</tbody>
+		</table>
+		
+		<table id = 'portrait_table' >
+			<tbody>
+				<tr>
+					<th id = 'portrait_kanji_header'>漢字</th>
+					<td id = 'portrait_kanji_data' ></td>
+				</tr>
+			</tbody>
+			<tbody id = 'portrait_kana_body' >
+				<tr>
+					<th id = 'portrait_kana_header' >かな</th>
+					<td id = 'portrait_kana_data' ></td>
+				</tr>
+			</tbody>
+			<tbody id = 'portrait_english_body' >
+				<tr>
+					<th id = 'portrait_english_header' >English</th>
+					<td id = 'portrait_english_data' ></td>
+				</tr>
+			</tbody>
+			<tbody id = 'portrait_spanish_body' >
+				<tr>
+					<th id = 'portrait_spanish_header' >Spanish</th>
+					<td id = 'portrait_spanish_data' ></td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<div class='buttons'>
+			<button id= 'next' >Next</button>
+			<a href='index.html'>
+				<button>Go Back</button>
+			</a>
+		</div>
 		
 		<!-- Table under this line -->
 		
-        <table>
+        <table id = 'data' >
             <thead id = 'row_index_0'>
                 <tr>
                     <th>Kanji</th>
@@ -66,11 +121,5 @@
                 </tr>
             </tbody>
         </table>
-		<button id= 'next' >Next</button>
-		
-		<a href="index.html">
-			<button>Go Back</button>
-		</a>
-		
 	</body>
 </html>
