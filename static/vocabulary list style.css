@@ -16,3 +16,17 @@ th {
 button {
 	margin: 10px;
 }
+
+@media only screen and (orientation: landscape) {
+	table {
+		width: 100%;
+		font-size: 3vh;
+	}
+}
+
+@media only screen and (orientation: portrait) {
+	table {
+		width: 100%;
+		font-size: 2vh;
+	}
+}
