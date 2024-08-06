@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', function() {
 	const generate_data_kana_index = (integer) => `#row_index_${integer} .data_kana`;
 	const generate_data_english_index = (integer) => `#row_index_${integer} .data_english`;
 	const generate_data_spanish_index = (integer) => `#row_index_${integer} .data_spanish`;
-	//Because it is '#row_index_X .data_row_kanji', with an space, it searches for a descendant.
-	//If you do     '#row_index_X.data_row_kanji', without an space, it searches for an element with that id and that class.
+	//Because it is '#row_index_X .data_kanji', with an space, it searches for a descendant.
+	//If you do     '#row_index_X.data_kanji', without an space, it searches for an element with that id and that class.
 	const generate_tbody_index = (integer) => `#row_index_${integer}`;
 	
 	let flow_state = false; //false-> show question, true-> show answer	
